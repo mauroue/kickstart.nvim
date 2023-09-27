@@ -328,8 +328,11 @@ vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
--- make contro+c acts like ESC
+-- make control+c acts like ESC
 vim.keymap.set("i", "<C-c>", "<Esc>")
+
+-- Open netw
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Remap for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
