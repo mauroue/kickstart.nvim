@@ -4,4 +4,6 @@
 -- See the kickstart.nvim README for more information
 return {
 	{ 'echasnovski/mini.nvim', version = false },
+	require('mini.surround').setup(),
+
 }
