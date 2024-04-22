@@ -309,7 +309,17 @@ vim.wo.relativenumber = true
 vim.o.hlsearch = false
 
 -- Make line numbers default
-vim.wo.number = true
+vim.opt.number = true
+-- You can also add relative line numbers, for help with jumping.
+--  Experiment for yourself to see if you like it!
+vim.opt.relativenumber = true
+
+vim.o.expandtab = true
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 4
+
+-- Disable line wrapping
+vim.o.wrap = false
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
